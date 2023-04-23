@@ -20,7 +20,7 @@ MongoClient.connect(uri).then(client => {
   const quotesCollection = db.collection('cmps415mongodb')
   
   app.get('/', (req, res) => {
-  const cursor = db.collection('quotes').find()
+  const cursor = db.collection('cmps415mongodb').find()
   console.log(cursor)
   
   })
