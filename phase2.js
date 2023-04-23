@@ -13,11 +13,6 @@ console.log('Server started at http://localhost:' + port);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.get('/', function(req, res) {
-  const myquery = req.query;
-  var outstring = 'Starting... ';
-  res.send(outstring);
-});
 
 MongoClient.connect(uri).then(client => {
   // ...
@@ -28,7 +23,7 @@ MongoClient.connect(uri).then(client => {
   const cursor = db.collection('quotes').find()
   console.log(cursor)
   
-})
+  })
 
  
 })
