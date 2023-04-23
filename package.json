@@ -1,0 +1,20 @@
+{
+  "name": "CMPS415ProjectPhase2",
+  "version": "1.0.0",
+  "description": "Jordan Butler CMPS415ProjectPhase2",
+  "main": "phase2.js",
+  "repository": "https://github.com/jordbutler/Phase2",
+  "author": "CK",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node phase2.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^5.1.0"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
